@@ -1,0 +1,38 @@
+.introduction {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    padding: 20px;
+    font-size: 17px;
+    line-height: 25px;
+    border-radius: 50px;
+    background-color: #faf1d3;
+}
+
+.introduction .chunk {
+    margin-bottom: 20px;
+}
+
+.introduction h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+.introduction h4 {
+    font-size: 20px;
+    margin-left: 1em;
+}
+
+.introduction p {
+    text-indent: 2em;
+}
+
+.introduction h3~p {
+    margin-left: 1em;
+}
+
+.introduction h4~p {
+    margin-left: 2em;
+}

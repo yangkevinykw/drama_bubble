@@ -1,0 +1,118 @@
+.title {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, 0);
+    text-align: center;
+    animation: enterAnim-1;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes enterAnim-1 {
+    5% {
+        transform: translate(-50%, 100%) scale(0.0);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(-50%, 0%) scale(1.0);
+        opacity: 100%;
+    }
+}
+
+.title h1 {
+    font-family: 'BRISTONE';
+    font-size: 40px;
+}
+
+.pic {
+    z-index: 15;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: enterAnim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+}
+
+@keyframes enterAnim {
+    10% {
+        transform: translate(-50%, -50%) scale(0.0);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.0);
+        opacity: 100%;
+    }
+}
+
+.pic img {
+    width: 100%;
+    vertical-align: bottom;
+}
+
+
+/* table's z-index is 15 */
+
+.table {
+    width: 560px;
+    overflow: hidden;
+    /* background-color: aqua; */
+}
+
+
+/* photo's z-index is around 15 */
+
+.photo {
+    width: 100px;
+    cursor: pointer;
+    transition: 500ms;
+}
+
+.photo:hover {
+    transform: translate(-50%, -55%) scale(1.3);
+}
+
+.snippet {
+    z-index: 10;
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    padding: 10px 30px;
+    transform: translate(-50%, 0%);
+    text-align: center;
+    font-family: Tahoma;
+    font-size: 30px;
+    border-radius: 30px;
+    opacity: 0%;
+    background-color: rgba(200, 200, 200, 0.5);
+    transition: opacity 400ms ease-in-out;
+}
+
+
+/* definition and development*/
+
+.info {
+    z-index: 17;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    animation: enterAnim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0ms;
+    animation-iteration-count: 1;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.info img {
+    width: 100%;
+}
+
+.info:hover {
+    transform: translate(-50%, -50%) scale(1.3);
+}
