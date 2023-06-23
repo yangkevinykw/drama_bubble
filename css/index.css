@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'BRISTONE';
+    src: url("font/Bristone.ttf");
+}
+
+
+/* background canvas */
+
+canvas {
+    z-index: -100;
+    background-color: #efefef;
+}
+
+
+/* bound */
+
+.bound {
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 10px solid #000; */
+    border-radius: 50%;
+}
+
+.out {
+    /* 85% of width */
+    width: 1000px;
+    height: 1000px;
+}
+
+.in {
+    /* 25% of width */
+    width: 300px;
+    height: 300px;
+}
+
+
+/* text */
+
+.bubble {
+    z-index: 10;
+    display: table;
+    position: absolute;
+    border-radius: 50%;
+    cursor: pointer;
+    text-align: center;
+    opacity: 80%;
+    transition: opacity 500ms;
+}
+
+.bubble:hover {
+    opacity: 100%;
+}
+
+.bubble h1 {
+    display: table-cell;
+    vertical-align: middle;
+    font-family: 'BRISTONE';
+    color: #efefef;
+}
+
+.title {
+    width: 260px;
+    height: 260px;
+    /* set in JavaScript */
+    /* top: 50%; */
+    /* left: 50%; */
+    background-color: #F48350;
+    border: 15px solid #5B6A73;
+    line-height: 50px;
+    font-size: 15px;
+}
+
+.subtitle {
+    width: 210px;
+    height: 210px;
+    line-height: 40px;
+    font-size: 10px;
+}
+
+.Documentary {
+    background-color: #293719;
+    border: 10px solid #CAC4B7;
+}
+
+.Film {
+    background-color: #123E4E;
+    border: 10px solid #b1b8ce;
+}
+
+.Musical {
+    background-color: #11120c;
+    border: 10px solid #561E0D;
+}

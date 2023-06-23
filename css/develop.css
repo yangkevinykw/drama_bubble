@@ -1,0 +1,95 @@
+.frame {
+    z-index: 10;
+    position: absolute;
+    width: 80%;
+    margin: 0 10%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.frame .content {
+    width: 100%;
+    border-left: 5px solid rgba(0, 0, 64, 0.8);
+    animation: enterAnim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.frame .content .node {
+    float: left;
+    width: 30%;
+    margin-left: 5%;
+    margin-top: 15%;
+}
+
+.frame .content .node h2 {
+    font-size: 40px;
+}
+
+@keyframes enterAnim {
+    0% {
+        transform: scale(0.0);
+        opacity: 0%;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+}
+
+.text {
+    z-index: 10;
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(0%, -50%);
+    width: 50%;
+    padding: 20px;
+    font-size: 20px;
+    line-height: 35px;
+    text-indent: 2em;
+    border-radius: 50px;
+    background-color: rgba(200, 255, 255, 0.7);
+    opacity: 0%;
+    transition: opacity 1000ms;
+}
+
+@keyframes enterAnim-2 {
+    0% {
+        transform: translate(0%, -50%) scale(0.0);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(0%, -50%) scale(1.0);
+        opacity: 100%;
+    }
+}
+
+
+/* toggle */
+
+.toggle {
+    position: absolute;
+    left: 15%;
+    bottom: 10%;
+    z-index: 15;
+    text-align: center;
+    animation: enterAnim;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.toggle .down {
+    width: 100px;
+    margin: 0 auto;
+}
+
+.toggle .down img {
+    width: 100%;
+}
+
+.toggle .source p {
+    margin-top: 20px;
+    font-size: 30px;
+}

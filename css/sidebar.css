@@ -1,0 +1,86 @@
+/* arrow */
+
+#arrow {
+    z-index: 20;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 8%;
+    opacity: 50%;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+#arrow:hover {
+    opacity: 100%;
+    background-color: rgba(220, 220, 220, 0.7);
+}
+
+#arrow img {
+    width: 50%;
+}
+
+
+/* sidebar */
+
+#sidebar {
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: -15%;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    text-align: center;
+    background-color: #F48350;
+    opacity: 90%;
+    transition: 500ms;
+}
+
+#sidebar .wrapper {
+    width: 100%;
+}
+
+#sidebar .wrapper .item {
+    width: 100%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    transition: 200ms ease-in-out;
+    cursor: pointer;
+}
+
+#sidebar .wrapper .item:hover {
+    background-color: #f47135;
+}
+
+#sidebar .wrapper .item a {
+    font-family: Georgia;
+    font-size: 30px;
+    color: #efefef;
+}
+
+#sidebar .footer {
+    color: #efefef;
+    cursor: default;
+}
+
+#time {
+    margin-top: 100px;
+    font-family: 'Georgia';
+    font-size: 20px;
+}
+
+#sidebar .footer .logo {
+    margin-top: 30px;
+    font-family: 'Consolas';
+    font-size: 20px;
+    line-height: 30px;
+}

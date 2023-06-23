@@ -1,0 +1,48 @@
+.title {
+    z-index: 10;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'BRISTONE';
+    font-size: 40px;
+    white-space: nowrap;
+    animation: enterAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes enterAnim {
+    0% {
+        transform: translate(-50%, -50%) scale(0.0);
+        opacity: 0%;
+    }
+    100% {
+        transform: translate(-50%, -50%) scale(1.0);
+        opacity: 100%;
+    }
+}
+
+.content {
+    z-index: 10;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    width: 70%;
+    padding: 20px;
+    transform: translate(-50%, -50%);
+    border-radius: 50px;
+    background-color: rgba(200, 255, 255, 0.7);
+    animation: enterAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.content p {
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-indent: 2em;
+    font-size: 20px;
+}

@@ -1,0 +1,74 @@
+.portrait {
+    position: absolute;
+    left: 10%;
+    top: 15%;
+    width: 200px;
+    animation: enterAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+.portrait img {
+    width: 100%;
+}
+
+.text {
+    position: absolute;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    animation: enterAnim;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes enterAnim {
+    0% {
+        transform: scale(0.0);
+        opacity: 0%;
+    }
+    100% {
+        transform: scale(1.0);
+        opacity: 100%;
+    }
+}
+
+.text p {
+    margin-bottom: 0.1em;
+    text-indent: 2em;
+    line-height: 1.5em;
+    font-size: 1.2em;
+}
+
+.text ul li {
+    text-indent: 2em;
+    margin-bottom: 0.1em;
+    font-size: 1em;
+}
+
+.chunk {
+    padding: 5px 20px;
+    background-color: #faf1d3;
+    border-radius: 50px;
+}
+
+.intro {
+    top: 10%;
+    left: 30%;
+}
+
+.intro h1 {
+    font-size: 40px;
+}
+
+.work {
+    top: 20%;
+    left: 30%;
+    width: 65%;
+}
+
+.knowledge {
+    top: 60%;
+    left: 10%;
+    width: 80%;
+}
